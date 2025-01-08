@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/screen_navigation"
+    app:startDestination="@id/serviceListFragment">
+
+    <fragment
+        android:id="@+id/serviceListFragment"
+        android:name="kmp.project.projectcodetest.presentation.services.ServiceListFragment"
+        android:label="ServiceListFragment">
+        <action
+            android:id="@+id/action_serviceListFragment_to_doctorListFragment"
+            app:destination="@id/doctorListFragment"
+            app:popUpToInclusive="false">
+            <argument
+                android:name="specialization"
+                app:argType="string" />
+        </action>
+        <action
+            android:id="@+id/action_serviceListFragment_to_appointmentListFragment"
+            app:destination="@id/appointmentListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorListFragment"
+        android:name="kmp.project.projectcodetest.presentation.doctors.DoctorListFragment"
+        android:label="DoctorListFragment"
+        app:popUpToInclusive="false">
+
+        <argument
+            android:name="specialization"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentListFragment"
+        android:name="kmp.project.projectcodetest.presentation.appointments.AppointmentListFragment"
+        android:label="AppointmentListFragment"
+        app:popUpToInclusive="false"/>
+</navigation>

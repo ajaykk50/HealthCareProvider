@@ -1,0 +1,51 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Doctor Name" />
+
+        <TextView
+            android:id="@+id/doctorSpecialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:text="Specialization" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/doctorExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Experience: 10 years" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/doctorAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Available" />
+
+        <Button
+            android:id="@+id/bookDoctorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Book Doctor" />
+    </LinearLayout>
+
+</layout>
